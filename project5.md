@@ -13,7 +13,7 @@ Install MySQL Server software on mysql server.
 
 Before we install the server, run `sudo apt update` and `sudo apt upgrade`
 
-Then run the following command to install the MySQL Server
+Then run the following command to install the MySQL Server:
 
 `sudo apt install mysql-server -y`
 
@@ -29,7 +29,7 @@ On mysql client, install MySQL Client software:
 
 - ## **Step 4**
 
-Before you can receive mysql client traffic on your mysql server, you need make sure your security group settings on AWS allows port 3306 traffic - the default MySQL server TCP port.  **For extra security, do not allow all IP addresses to reach your ‘mysql server**
+Before you can receive mysql client traffic on your mysql server, you need make sure your security group settings on AWS allows port 3306 traffic - the default MySQL server TCP port.  **For extra security, do not allow all IP addresses to reach your ‘mysql server.**
 
 
 - ## **Step 5** 
@@ -70,7 +70,7 @@ Use the command below:
 
 `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`
 
-By default, this value is set to 127.0.0.1, meaning that the server will only look for local connections. In the text editor, **replace the old bind-address from ‘127.0.0.1’ to ‘0.0.0.0’** then save and exit. **(CTRL + X, Y, then ENTER)**. This gives access to an external IP address
+By default, this value is set to 127.0.0.1, meaning that the server will only look for local connections. In the text editor, **replace the old bind-address from ‘127.0.0.1’ to ‘0.0.0.0’** then save and exit. **(CTRL + X, Y, then ENTER)**. This gives access to an external IP address.
 
 ![Image](./Images/Screenshot_5.png)
 
@@ -80,7 +80,7 @@ Restart mysql server with: `sudo systemctl restart mysql`
 
 - ## **Step 8** 
 
-Then from msql client, connect remotely to the mysql server Database Engine without using SSH. **You must use mysql utility to perform this action** 
+Then from msql client, connect remotely to the mysql server Database Engine without using SSH. **You must use mysql utility to perform this action.** 
 
 Type: `sudo mysql -u remote_user -h 172.31.95.168 -p` and enter password for the user password.
 
