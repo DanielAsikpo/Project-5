@@ -29,7 +29,7 @@ On mysql client, install MySQL Client software:
 
 - ## **Step 4**
 
-Before you can receive mysql client traffic on your mysql server, you need make sure your security group settings on AWS allows port 3306 traffic - the default MySQL server TCP port.  **For extra security, do not allow all IP addresses to reach your ‘mysql server.**
+Before you can receive mysql client traffic on your mysql server, you need make sure your security group settings on AWS allows port 3306 traffic - the default MySQL server TCP port.  **For extra security, do not allow all IP addresses to reach your mysql server.**
 
 
 - ## **Step 5** 
